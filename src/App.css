@@ -1,0 +1,125 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  background-color: rgb(54, 56, 56);
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h3 {
+  font-size: xx-small;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+div {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.content {
+  display: none;
+}
+
+.show-content {
+  display: block;
+}
+
+img {
+  border: 5px solid #555;
+}
+
+.logs-container {
+  margin-top: 20px;
+  width: 600px;
+  margin-left: 300px;
+}
+
+/* Custom styles for the card */
+.log-card {
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-block-end: 20px;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  width: calc(100% + 100px); /* Increase card width to include border */
+  margin-left: -50px; /* Offset to compensate for increased width */
+  margin-right: -50px; /* Offset to compensate for increased width */
+}
+
+/* Custom styles for the video element */
+.log-video {
+  height: 550px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: fit; /* Ensure video fills container */
+}
+
+/* Custom styles for the notes text */
+.log-notes {
+  margin-top: 10px;
+  font-size: 20px;
+}
